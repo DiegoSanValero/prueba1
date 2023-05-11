@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Ground Heart</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <meta name="description" content="Enjoy the best freshly ground coffee you have ever tasted.">
+    <meta name="keywords" content="aragon, beverages, coffee, delivery, ground, zaragoza">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#151515">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:title" content="Welcome | Ground Heart">
+    <meta property="og:description" content="Coffee lovers, Ground Coffee has arrived in the city.">
+    <meta property="twitter:card" content="summary">
+    <meta property="og:site_name" content="Ground Heart">
+    <meta property="og:type" content="website">
+    <meta property="twitter:creator" content="@ground_heart">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <script defer src="../assets/js/title.js"></script>
+    <script defer src="../dashboard/assets/js/view/dashboard-info.js"></script>
+    <script defer src="../dashboard/assets/js/view/faq.js"></script>
+    <script defer src="./assets/js/navbars/navbar-dashboard.js"></script>
+    <script type="module" src="../assets/js/auth/auth-staff.js"></script>
+    <script defer src="../dashboard/assets/js/log-out.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <section class="header__brand">
+                <a class="header__brand-link" href="/dashboard/">
+                    <svg class="header__brand-logo" viewBox="0 0 172 68" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28.896 25.48V31.192H27.168C26.976 35.32 25.808 38.472 23.664 40.648C21.52 42.824 18.56 43.912 14.784 43.912C10.368 43.912 6.944 42.36 4.512 39.256C2.112 36.12 0.912 31.704 0.912 26.008C0.912 20.536 2.128 16.248 4.56 13.144C7.024 10.04 10.448 8.488 14.832 8.488C18.736 8.488 21.728 9.464 23.808 11.416C25.888 13.336 27.024 16.12 27.216 19.768H19.728C19.504 16.44 17.872 14.776 14.832 14.776C10.704 14.776 8.64 18.472 8.64 25.864C8.64 29.928 9.152 32.904 10.176 34.792C11.2 36.648 12.832 37.576 15.072 37.576C16.672 37.576 17.904 37.032 18.768 35.944C19.664 34.856 20.128 33.272 20.16 31.192H14.592V25.48H28.896ZM55.0204 43H46.8604L42.2524 33.736H39.4204V43H32.0284V9.4H42.2524C46.2524 9.4 49.3564 10.488 51.5644 12.664C53.7724 14.84 54.8764 17.8 54.8764 21.544C54.8764 26.472 53.0364 29.976 49.3564 32.056L55.0204 43ZM39.4204 15.112V27.976H41.9164C43.6764 27.976 45.0044 27.416 45.9004 26.296C46.8284 25.144 47.2924 23.56 47.2924 21.544C47.2924 19.56 46.8284 17.992 45.9004 16.84C44.9724 15.688 43.6444 15.112 41.9164 15.112H39.4204ZM81.978 39.352C79.514 42.392 75.994 43.912 71.418 43.912C66.842 43.912 63.322 42.392 60.858 39.352C58.394 36.28 57.162 31.896 57.162 26.2C57.162 20.504 58.394 16.136 60.858 13.096C63.322 10.024 66.842 8.488 71.418 8.488C75.994 8.488 79.514 10.024 81.978 13.096C84.474 16.136 85.722 20.504 85.722 26.2C85.722 31.896 84.474 36.28 81.978 39.352ZM64.89 26.2C64.89 33.56 67.066 37.24 71.418 37.24C75.77 37.24 77.946 33.56 77.946 26.2C77.946 18.84 75.77 15.16 71.418 15.16C67.066 15.16 64.89 18.84 64.89 26.2ZM109.473 40.696C107.361 42.808 104.433 43.864 100.689 43.864C96.945 43.864 94.017 42.808 91.905 40.696C89.793 38.552 88.737 35.544 88.737 31.672V9.4H96.225V31.336C96.225 33.256 96.625 34.744 97.425 35.8C98.257 36.856 99.345 37.384 100.689 37.384C102.065 37.384 103.169 36.856 104.001 35.8C104.833 34.744 105.249 33.256 105.249 31.336V9.4H112.689V31.672C112.689 35.576 111.617 38.584 109.473 40.696ZM117.341 43V9.4H124.109L133.853 30.808V9.4H140.621V43H133.853L124.109 22.312V43H117.341ZM145.7 43V9.4H156.356C160.804 9.4 164.292 10.92 166.82 13.96C169.38 16.968 170.66 21.048 170.66 26.2C170.66 31.288 169.348 35.368 166.724 38.44C164.132 41.48 160.564 43 156.02 43H145.7ZM153.092 36.712H156.02C160.692 36.712 163.028 33.208 163.028 26.2C163.028 19.192 160.692 15.688 156.02 15.688H153.092V36.712Z"
+                            fill="#151515" />
+                        <path
+                            d="M6.06875 64V52.8H7.90875V57.616H12.5328V52.8H14.3728V64H12.5328V59.264H7.90875V64H6.06875ZM45.5719 64V52.8H52.0359V54.448H47.4119V57.616H52.0359V59.264H47.4119V62.352H52.0359V64H45.5719ZM89.283 64L88.851 62.576H84.547L84.115 64H82.115L85.891 52.8H87.507L91.283 64H89.283ZM85.027 60.928H88.355L86.691 55.376L85.027 60.928ZM129.484 56.72C129.484 57.584 129.265 58.3413 128.828 58.992C128.401 59.6427 127.825 60.1067 127.1 60.384L129.308 64H127.212L125.164 60.64H123.356V64H121.516V52.8H125.644C126.764 52.8 127.681 53.168 128.396 53.904C129.121 54.64 129.484 55.5787 129.484 56.72ZM123.356 54.448V58.992H125.532C126.14 58.992 126.641 58.7787 127.036 58.352C127.441 57.9147 127.644 57.3707 127.644 56.72C127.644 56.0693 127.441 55.5307 127.036 55.104C126.641 54.6667 126.14 54.448 125.532 54.448H123.356ZM161.944 64V54.528H158.696V52.8H167.048V54.528H163.784V64H161.944Z"
+                            fill="#E75650" />
+                    </svg>
+                </a>
+            </section>
+            <nav class="header__navbar">
+                <ul class="header__nav">
+                    <li class="header__nav-item header__nav-item--order">
+                        <a class="header__nav-link header__nav-link--order" href="#">Customer area</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="user">
+            <section class="user__area">
+                <div class="user__header">
+                    <h2 class="gh-h2">Dashboard</h2>
+                    <img class="user__header-profile" src="/assets/img/profile/default.png" alt="profile">
+                </div>
+                <h3 class="gh-p">Welcome to the employee area!</h3>
+                <div class="user__control">
+                    <div class="user__actions">
+                        <nav class="user__navbar">
+                            <ul class="user__nav">
+                                <li class="user__nav-item user__nav-item--actived" id="user__nav-item-profile">
+                                    <a class="user__nav-link">Profile</a>
+                                </li>
+                                <li class="user__nav-item" id="user__nav-item-occupational-hazards">
+                                    <a class="user__nav-link">Occupational hazards</a>
+                                </li>
+                                <li class="user__nav-item" id="user__nav-item-committee">
+                                    <a class="user__nav-link">Committee </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <article class="user__section user__section--actived" id="dashboard__profile">
+                            <h5 class="gh-h5">Profile</h5>
+                            <section class="profile">
+                                <form id="form__dashboard-profile" action="#" method="post">
+                                    <legend class="gh-form__section gh-form__section--actived">
+                                        <h6 class="gh-h6">Profile</h6>
+                                        <div class="gh-form__field-double">
+                                            <div class="gh-form__field">
+                                                <label class="gh-form__label" for="name">Name</label>
+                                                <input class="gh-form__input" type="text" name="name" disabled>
+                                            </div>
+                                            <div class="gh-form__field">
+                                                <label class="gh-form__label" for="surname">Surname</label>
+                                                <input class="gh-form__input" type="text" name="surname" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="gh-form__field">
+                                            <label class="gh-form__label" for="email">Email</label>
+                                            <input class="gh-form__input" type="email" name="email" disabled>
+                                        </div>
+                                    </legend>
+                                    <legend class="gh-form__section gh-form__section--actived">
+                                        <h6 class="gh-h6">Employee data</h6>
+                                        <div class="gh-form__field-double">
+                                            <div class="gh-form__field">
+                                                <label class="gh-form__label" for="department">Department</label>
+                                                <input class="gh-form__input" type="text" name="department" disabled>
+                                            </div>
+                                            <div class="gh-form__field">
+                                                <label class="gh-form__label" for="position">Position</label>
+                                                <input class="gh-form__input" type="text" name="position" disabled>
+                                            </div>
+                                        </div>
+                                    </legend>
+                                    <legend class="gh-form__section gh-form__section--actived">
+                                        <h6 class="gh-h6">Payrolls</h6>
+                                        <div class="gh-form__field">
+                                            <label class="gh-form__label" for="bank-account">Bank account</label>
+                                            <input class="gh-form__input" type="text" name="bank-account" disabled>
+                                        </div>
+                                        <div class="gh-form__field">
+                                            <label class="gh-form__label" for="bank-account">Payrolls</label>
+                                            <p class="gh-form__message gh-form__message--info">You can only view the
+                                                last three payrolls for security reasons.</p>
+                                            <table class="profile__payrolls">
+                                                <thead class="profile__payrolls-head">
+                                                    <tr>
+                                                        <th>Payroll</th>
+                                                        <th>Payment date</th>
+                                                        <th>Download</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="profile__payroll-data">April 2023</td>
+                                                        <td class="profile__payroll-data">2023-05-01</td>
+                                                        <td class="profile__payroll-data">
+                                                            <a href="/dashboard/assets/docs/april-payroll.pdf" download>
+                                                                <svg class="profile__payrolls-icon"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 96 960 960">
+                                                                    <path
+                                                                        d="M479.867 731Q474 731 469 729q-5-2-10-7L308 571q-9-9-8.5-21.5T309 528q9-9 21.5-9t21.5 9l98 99V286q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T510 286v341l99-99q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5L501 722q-5 5-10.133 7-5.134 2-11 2ZM220 896q-24 0-42-18t-18-42V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T220 723v113h520V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T800 723v113q0 24-18 42t-42 18H220Z" />
+                                                                </svg>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="profile__payroll-data">March 2023</td>
+                                                        <td class="profile__payroll-data">2023-04-03</td>
+                                                        <td class="profile__payroll-data">
+                                                            <a href="/dashboard/assets/docs/march-payroll.pdf" download>
+                                                                <svg class="profile__payrolls-icon"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 96 960 960">
+                                                                    <path
+                                                                        d="M479.867 731Q474 731 469 729q-5-2-10-7L308 571q-9-9-8.5-21.5T309 528q9-9 21.5-9t21.5 9l98 99V286q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T510 286v341l99-99q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5L501 722q-5 5-10.133 7-5.134 2-11 2ZM220 896q-24 0-42-18t-18-42V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T220 723v113h520V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T800 723v113q0 24-18 42t-42 18H220Z" />
+                                                                </svg>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="profile__payroll-data">February 2023</td>
+                                                        <td class="profile__payroll-data">2023-03-02</td>
+                                                        <td class="profile__payroll-data">
+                                                            <a href="/dashboard/assets/docs/february-payroll.pdf" download>
+                                                                <svg class="profile__payrolls-icon"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 96 960 960">
+                                                                    <path
+                                                                        d="M479.867 731Q474 731 469 729q-5-2-10-7L308 571q-9-9-8.5-21.5T309 528q9-9 21.5-9t21.5 9l98 99V286q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T510 286v341l99-99q9-9 21.5-9t21.5 9q9 9 9 21.5t-9 21.5L501 722q-5 5-10.133 7-5.134 2-11 2ZM220 896q-24 0-42-18t-18-42V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T220 723v113h520V723q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T800 723v113q0 24-18 42t-42 18H220Z" />
+                                                                </svg>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </legend>
+                                </form>
+                            </section>
+                        </article>
+                        <article class="user__section" id="dashboard__occupational-hazards">
+                            <h5 class="gh-h5">Occupational hazards</h5>
+                            <div class="dashboard__message">
+                                <div class="dashboard__message-details">
+                                    <h6 class="dashboard__message-title gh-h6">Risk prevention brochure</h6>
+                                    <p>Learn how you should act on psychosocial factors in the driving of goods on the road.<br>
+                                    <a class="committee__faq-ref" href="/dashboard/assets/docs/brochure-insst.pdf" target="_blank">View brochure</a></p>
+                                </div>
+                                <svg class="dashboard__message-icon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 96 960 960">
+                                    <path
+                                        d="m634 608 86 77v60H510v241l-30 30-30-30V745H240v-60l80-77V276h-50v-60h414v60h-50v332Zm-313 77h312l-59-55V276H380v354l-59 55Zm156 0Z" />
+                                </svg>
+                            </div>
+                            <div class="user__subsection">
+                                <h6 class="gh-h6">Occupational risk assessment</h6>
+                                <embed class="hazards__pdf" src="/dashboard/assets/docs/risk-assessment.pdf" type="application/pdf">
+                                <a class="committee__faq-href" href="/dashboard/assets/docs/risk-assessment.pdf" download>Download document</a>
+                            </div>
+                        </article>
+                        <article class="user__section" id="dashboard__committee">
+                            <h5 class="gh-h5">Committee</h5>
+                            <p>Welcome to the <b>union area of the Works Council</b>. Here you find all the information
+                                that could be of interest to you, whether or not you are a member of the committee.</p>
+                            <div class="dashboard__message">
+                                <div class="dashboard__message-details">
+                                    <h6 class="dashboard__message-title gh-h6">Strike call - Friday, May 19th</h6>
+                                    <p>Workers, we call you to strike next <b>Friday, May 19th</b>. We demand better
+                                        working
+                                        conditions and a realistic Occupational Risk Prevention Plan. Join us in this
+                                        fight for our rights and dignity. <b>Together we are stronger!</b></p>
+                                </div>
+                                <svg class="dashboard__message-icon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 96 960 960">
+                                    <path
+                                        d="m634 608 86 77v60H510v241l-30 30-30-30V745H240v-60l80-77V276h-50v-60h414v60h-50v332Zm-313 77h312l-59-55V276H380v354l-59 55Zm156 0Z" />
+                                </svg>
+                            </div>
+                            <div class="user__subsection">
+                                <h6 class="gh-h6">Organization chart</h6>
+                                <section class="committee__chart">
+                                    <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/diego.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Diego Martínez Machín</p>
+                                            <p class="committee__chart-position">General Secretary</p>
+                                            <p>Responsible for the general management of the union section and the
+                                                coordination of activities.</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/faustina.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Faustina Eloísa Paredes Robles</p>
+                                            <p class="committee__chart-position">General Treasurer
+                                            </p>
+                                            <p>Responsible for managing the financial resources of the union section.
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                    <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/raul.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Raúl Moraleda Cubero</p>
+                                            <p class="committee__chart-position">Occupational Risk Prevention Delegate
+                                            </p>
+                                            <p>Responsible for the occupational health and safety of employees.</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/consuelo.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Consuelo María Zanjón de Torremolina</p>
+                                            <p class="committee__chart-position">Equality Plan 2023 Delegate
+                                            </p>
+                                            <p>Responsible for equal opportunities among employees and work-life
+                                                balance.</p>
+                                        </div>
+                                    </div> -->
+                                    <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/marcos.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Marcos Lapuente Candado</p>
+                                            <p class="committee__chart-position">Personnel Delegate</p>
+                                            <p>Responsible for representing and defending the labor interests of
+                                                employees.</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="committee__chart-card">
+                                        <div class="committee__chart-profile">
+                                            <img class="committee__chart-img" src="/dashboard/assets/img/rocio.jpg"
+                                                alt="delegate">
+                                        </div>
+                                        <div class="committee__chart-details">
+                                            <p class="committee__chart-name">Rocío González de Soto Mayor</p>
+                                            <p class="committee__chart-position">Communication, Social Networks and
+                                                Digital Agenda Secretary
+                                            </p>
+                                            <p>Responsible for the dissemination of information and communication
+                                                between the members of the union section and the company management.</p>
+                                        </div>
+                                    </div> -->
+                                </section>
+                            </div>
+                            <div class="user__subsection">
+                                <h6 class="gh-h6">Frequently Asked Questions (FAQs)</h6>
+                                <article class="committee__faq">
+                                    <div class="committee__faq-header">
+                                        <h6 class="committee__faq-question">Which agreement applies to me?</h6>
+                                        <svg class="committee__faq-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M480 699q-6 0-11-2t-10-7L261 492q-8-8-7.5-21.5T262 449q10-10 21.5-8.5T304 450l176 176 176-176q8-8 21.5-9t21.5 9q10 8 8.5 21t-9.5 22L501 690q-5 5-10 7t-11 2Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="committee__faq-details">
+                                        <p>In the legal area, <b>Ground Coffee</b> follows the agreement <a
+                                                class="committee__faq-href"
+                                                href="/dashboard/assets/docs/collective-agreement.pdf" download>Convenio
+                                                Colectivo Estatal de la Elaboración de Productos Cocinados para su Venta
+                                                a Domicilio</a>. In addition, if you have a <b>fixed-term contract</b>,
+                                            the
+                                            <a class="committee__faq-href"
+                                                href="/dashboard/assets/docs/collective-agreement-appendix.pdf"
+                                                download>Modificación del Convenio Colectivo 2023</a> also applies to
+                                            you.
+                                        </p>
+                                        <p class="committee__faq-ref">
+                                            <a class="committee__faq-link" href="https://boe.es/" target="_blank">ref.
+                                                Agencia Estatal Boletín
+                                                Oficial del Estado (BOE)</a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="committee__faq">
+                                    <div class="committee__faq-header">
+                                        <h6 class="committee__faq-question">Am I entitled to vacation?</h6>
+                                        <svg class="committee__faq-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M480 699q-6 0-11-2t-10-7L261 492q-8-8-7.5-21.5T262 449q10-10 21.5-8.5T304 450l176 176 176-176q8-8 21.5-9t21.5 9q10 8 8.5 21t-9.5 22L501 690q-5 5-10 7t-11 2Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="committee__faq-details">
+                                        <p>Yes, you are entitled to <b>thirty-one calendar days of paid annual leave</b>
+                                            that
+                                            can not be replaced by financial compensation.</p>
+                                        <p class="committee__faq-ref">
+                                            <a class="committee__faq-link"
+                                                href="/dashboard/assets/docs/collective-agreement.pdf"
+                                                target="_blank">ref. Artículo 13 del Convenio Colectivo</a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="committee__faq">
+                                    <div class="committee__faq-header">
+                                        <h6 class="committee__faq-question">Am I entitled to leaves?</h6>
+                                        <svg class="committee__faq-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M480 699q-6 0-11-2t-10-7L261 492q-8-8-7.5-21.5T262 449q10-10 21.5-8.5T304 450l176 176 176-176q8-8 21.5-9t21.5 9q10 8 8.5 21t-9.5 22L501 690q-5 5-10 7t-11 2Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="committee__faq-details">
+                                        <p>Yes, you are entitled to leaves. In addition to the leaves described in
+                                            Estatuto de los Trabajadores, you will be able to take unpaid and
+                                            recoverable leave of <b>one day per year for personal matters</b>.</p>
+                                        <p class="committee__faq-ref">
+                                            <a class="committee__faq-link"
+                                                href="/dashboard/assets/docs/workers-statute-law.pdf"
+                                                target="_blank">ref. Artículo 37 of the Estatuto de los
+                                                Trabajadores</a><br><a class="committee__faq-link"
+                                                href="/dashboard/assets/docs/collective-agreement.pdf"
+                                                target="_blank">ref. Artículo 4 del Convenio Colectivo</a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="committee__faq">
+                                    <div class="committee__faq-header">
+                                        <h6 class="committee__faq-question">I have been harassed at work, what do I do?
+                                        </h6>
+                                        <svg class="committee__faq-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M480 699q-6 0-11-2t-10-7L261 492q-8-8-7.5-21.5T262 449q10-10 21.5-8.5T304 450l176 176 176-176q8-8 21.5-9t21.5 9q10 8 8.5 21t-9.5 22L501 690q-5 5-10 7t-11 2Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="committee__faq-details">
+                                        <p>Harassment at work is a form of violence that violates the dignity and
+                                            integrity of people and <b>you should not be tolerated or consent</b>. If
+                                            you have suffered or believe that you are suffering harassment at work,
+                                            <b>immediately inform your union representative or the company
+                                                management</b>.<br><br>Remember that you are not alone and you have the
+                                            right to work in a respectful and safe environment.
+                                        </p>
+                                        <p class="committee__faq-ref">
+                                            <a class="committee__faq-link"
+                                                href="https://www.inmujeres.gob.es/actualidad/noticias/2021/protocoloacoso.htm"
+                                                target="_blank">ref. Instituto de las Mujeres (IMs)</a><br><a
+                                                class="committee__faq-link"
+                                                href="/dashboard/assets/docs/harassment-protocol.pdf"
+                                                target="_blank">ref. Hacienda y Administración Pública</a>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="user__subsection">
+                                <h6 class="gh-h6">Agreements in progress</h6>
+                                <div class="committee__agrements">
+                                    <div class="committee__agrement">
+                                        <div class="committee__agrement-details">
+                                            <h6 class="dashboard__message-title gh-h6">Salary Tables 2023</h6>
+                                            <p>Negotiation of the 2023 Collective Bargaining Agreement Salary Tables.
+                                            </p>
+                                        </div>
+                                        <svg class="committee__agrement-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M349 806h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 746H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 806Zm0-170h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 576H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 636ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h336q12.444 0 23.722 5T599 194l183 183q8 8 13 19.278 5 11.278 5 23.722v496q0 24-18 42t-42 18H220Zm331-584V236H220v680h520V422H581q-12.75 0-21.375-8.625T551 392ZM220 236v186-186 680-680Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="committee__agrement">
+                                        <div class="committee__agrement-details">
+                                            <h6 class="dashboard__message-title gh-h6">Delivery areas</h6>
+                                            <p>Amendment of Article 13 of the Collective Bargaining Agreement.</p>
+                                        </div>
+                                        <svg class="committee__agrement-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 96 960 960">
+                                            <path
+                                                d="M349 806h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 746H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 806Zm0-170h262q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T611 576H349q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T349 636ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h336q12.444 0 23.722 5T599 194l183 183q8 8 13 19.278 5 11.278 5 23.722v496q0 24-18 42t-42 18H220Zm331-584V236H220v680h520V422H581q-12.75 0-21.375-8.625T551 392ZM220 236v186-186 680-680Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="user__messages">
+                        <h5 class="gh-h5">Messages</h5>
+                        <article class="user__message">
+                            <svg class="user__message-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
+                                <path
+                                    d="M80 740V218q0-14 13-28t27-14h519q15 0 28 13.5t13 28.5v356q0 14-13 28t-28 14H240L106 750q-7 7-16.5 3.5T80 740Zm60-504v320-320Zm141 580q-14 0-27.5-14T240 774v-98h500V336h100q14 0 27 14t13 29v560q0 10-9.5 13.5T854 949L721 816H281Zm339-580H140v320h480V236Z" />
+                            </svg>
+                            <div class="user__message-info">
+                                <h6 class="gh-h6">Strike information</h6>
+                                <p>The Works Council reminds that the planned strike will begin next <b>Friday, May
+                                        19th</b>. For
+                                    more information, please contact your union representative.</p>
+                                <p class="user__message-date">Thursday, 11:06 AM</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <svg class="footer__logo" viewBox="0 0 172 68" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M28.896 25.48V31.192H27.168C26.976 35.32 25.808 38.472 23.664 40.648C21.52 42.824 18.56 43.912 14.784 43.912C10.368 43.912 6.944 42.36 4.512 39.256C2.112 36.12 0.912 31.704 0.912 26.008C0.912 20.536 2.128 16.248 4.56 13.144C7.024 10.04 10.448 8.488 14.832 8.488C18.736 8.488 21.728 9.464 23.808 11.416C25.888 13.336 27.024 16.12 27.216 19.768H19.728C19.504 16.44 17.872 14.776 14.832 14.776C10.704 14.776 8.64 18.472 8.64 25.864C8.64 29.928 9.152 32.904 10.176 34.792C11.2 36.648 12.832 37.576 15.072 37.576C16.672 37.576 17.904 37.032 18.768 35.944C19.664 34.856 20.128 33.272 20.16 31.192H14.592V25.48H28.896ZM55.0204 43H46.8604L42.2524 33.736H39.4204V43H32.0284V9.4H42.2524C46.2524 9.4 49.3564 10.488 51.5644 12.664C53.7724 14.84 54.8764 17.8 54.8764 21.544C54.8764 26.472 53.0364 29.976 49.3564 32.056L55.0204 43ZM39.4204 15.112V27.976H41.9164C43.6764 27.976 45.0044 27.416 45.9004 26.296C46.8284 25.144 47.2924 23.56 47.2924 21.544C47.2924 19.56 46.8284 17.992 45.9004 16.84C44.9724 15.688 43.6444 15.112 41.9164 15.112H39.4204ZM81.978 39.352C79.514 42.392 75.994 43.912 71.418 43.912C66.842 43.912 63.322 42.392 60.858 39.352C58.394 36.28 57.162 31.896 57.162 26.2C57.162 20.504 58.394 16.136 60.858 13.096C63.322 10.024 66.842 8.488 71.418 8.488C75.994 8.488 79.514 10.024 81.978 13.096C84.474 16.136 85.722 20.504 85.722 26.2C85.722 31.896 84.474 36.28 81.978 39.352ZM64.89 26.2C64.89 33.56 67.066 37.24 71.418 37.24C75.77 37.24 77.946 33.56 77.946 26.2C77.946 18.84 75.77 15.16 71.418 15.16C67.066 15.16 64.89 18.84 64.89 26.2ZM109.473 40.696C107.361 42.808 104.433 43.864 100.689 43.864C96.945 43.864 94.017 42.808 91.905 40.696C89.793 38.552 88.737 35.544 88.737 31.672V9.4H96.225V31.336C96.225 33.256 96.625 34.744 97.425 35.8C98.257 36.856 99.345 37.384 100.689 37.384C102.065 37.384 103.169 36.856 104.001 35.8C104.833 34.744 105.249 33.256 105.249 31.336V9.4H112.689V31.672C112.689 35.576 111.617 38.584 109.473 40.696ZM117.341 43V9.4H124.109L133.853 30.808V9.4H140.621V43H133.853L124.109 22.312V43H117.341ZM145.7 43V9.4H156.356C160.804 9.4 164.292 10.92 166.82 13.96C169.38 16.968 170.66 21.048 170.66 26.2C170.66 31.288 169.348 35.368 166.724 38.44C164.132 41.48 160.564 43 156.02 43H145.7ZM153.092 36.712H156.02C160.692 36.712 163.028 33.208 163.028 26.2C163.028 19.192 160.692 15.688 156.02 15.688H153.092V36.712Z"
+                    fill="white" />
+                <path
+                    d="M6.06875 64V52.8H7.90875V57.616H12.5328V52.8H14.3728V64H12.5328V59.264H7.90875V64H6.06875ZM45.5719 64V52.8H52.0359V54.448H47.4119V57.616H52.0359V59.264H47.4119V62.352H52.0359V64H45.5719ZM89.283 64L88.851 62.576H84.547L84.115 64H82.115L85.891 52.8H87.507L91.283 64H89.283ZM85.027 60.928H88.355L86.691 55.376L85.027 60.928ZM129.484 56.72C129.484 57.584 129.265 58.3413 128.828 58.992C128.401 59.6427 127.825 60.1067 127.1 60.384L129.308 64H127.212L125.164 60.64H123.356V64H121.516V52.8H125.644C126.764 52.8 127.681 53.168 128.396 53.904C129.121 54.64 129.484 55.5787 129.484 56.72ZM123.356 54.448V58.992H125.532C126.14 58.992 126.641 58.7787 127.036 58.352C127.441 57.9147 127.644 57.3707 127.644 56.72C127.644 56.0693 127.441 55.5307 127.036 55.104C126.641 54.6667 126.14 54.448 125.532 54.448H123.356ZM161.944 64V54.528H158.696V52.8H167.048V54.528H163.784V64H161.944Z"
+                    fill="#E75650" />
+            </svg>
+            <p class="footer__legal">&copy 2023 GROUND HEART - All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

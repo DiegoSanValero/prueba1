@@ -1,0 +1,262 @@
+@import url("../../../assets/css/brand.css");
+
+/* ======= DASHBOARD ======= */
+.user__subsection {
+  margin-bottom: 2rem;
+}
+
+.user__subsection:last-child {
+  margin-bottom: 0;
+}
+
+.dashboard__message {
+  align-items: center;
+  background-color: var(--gh-white);
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem 0;
+  padding: 1rem;
+}
+
+.dashboard__message-details {
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.dashboard__message-icon {
+  fill: var(--gh-red);
+  height: 2rem;
+}
+
+.dashboard__message-title {
+  color: var(--gh-red);
+}
+
+/* ------- PROFILE ADMIN SECTION ------- */
+.profile {
+  background-color: var(--gh-white);
+  padding: 1rem;
+}
+
+.profile__payrolls {
+  display: table;
+  margin-top: 0.5rem;
+}
+
+.profile__payrolls-head {
+  background-color: var(--gh-grey);
+  font-weight: 500;
+}
+
+.profile__payroll-data {
+  color: var(--gh-black-light);
+  text-align: center;
+}
+
+.profile__payrolls-icon {
+  fill: var(--gh-black-light);
+  height: 1.5rem;
+}
+
+/* ------- OCCUPATIONAL HAZARDS ADMIN SECTION ------- */
+.hazards__pdf {
+  height: 50vh;
+  width: 100%;
+}
+
+/* ------- COMMITTEE ADMIN SECTION ------- */
+.committee__chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.committee__chart-card {
+  background-color: var(--gh-white);
+  display: flex;
+  height: 10rem;
+  justify-content: space-between;
+  width: calc(50% - 0.5rem);
+}
+
+.committee__chart-profile {
+  display: block;
+}
+
+.committee__chart-img {
+  height: 100%;
+}
+
+.committee__chart-details {
+  padding: 1rem;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.committee__chart-details::-webkit-scrollbar {
+  width: 0.375rem;
+  height: 0.375rem;
+}
+
+.committee__chart-details::-webkit-scrollbar-track {
+  background-color: var(--gh-white)
+}
+
+.committee__chart-details::-webkit-scrollbar-thumb {
+  background-color: var(--gh-black-light);
+}
+
+.committee__chart-name {
+  font-weight: 500;
+}
+
+.committee__chart-position {
+  color: var(--gh-red);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .committee__chart-card {
+    width: 100%;
+  }
+}
+
+.committee__faq {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--gh-white);
+}
+
+.committee__faq:last-child {
+  margin-bottom: 0;
+}
+
+.committee__faq-header {
+  align-items: center;
+  background-color: var(--gh-white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.committee__faq-question {
+  font-family: "GT Walsheim Pro Condensed", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.committee__faq-icon {
+  cursor: pointer;
+  fill: var(--gh-black);
+  height: 2rem;
+}
+
+.committee__faq-details {
+  display: none;
+  padding-top: 0.5rem;
+}
+
+.committee__faq-details--actived {
+  display: block;
+}
+
+.committee__faq-href {
+  color: var(--gh-black-light);
+}
+
+.committee__faq-ref {
+  color: var(--gh-black-light);
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.committee__faq-link {
+  color: var(--gh-black-light);
+  text-decoration: none;
+}
+
+.committee__faq-link:hover {
+  text-decoration: underline;
+}
+
+.committee__agrements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.committee__agrement {
+  background-color: var(--gh-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: calc(50% - 0.5rem);
+}
+
+.committee__agrement-details {
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.committee__agrement-icon {
+  align-self: center;
+  fill: var(--gh-red);
+  height: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .committee__agrement {
+    width: 100%;
+  }
+}
+
+/* ------- MESSAGES ADMIN SECTION ------- */
+.user__messages {
+  background-color: var(--gh-grey);
+  height: fit-content;
+  padding: 1rem;
+  width: 30%;
+}
+
+.user__message {
+  background-color: var(--gh-white);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.user__message:last-child {
+  margin-bottom: 0;
+}
+
+.user__message-icon {
+  fill: var(--gh-black-light);
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.user__message-info {
+  width: 100%;
+}
+
+.user__message-info b {
+  font-weight: bold;
+}
+
+.user__message-date {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  text-align: end;
+}
+
+@media only screen and (max-width: 768px) {
+  .user__messages {
+    width: 100%;
+  }
+}
